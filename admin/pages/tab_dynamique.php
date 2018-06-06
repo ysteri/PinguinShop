@@ -24,7 +24,7 @@
 	</div>
 </div>
 
-<!-- Modal pop up pour l'ajout et la modification d'une chambre -->
+<!-- Modal pop up pour l'ajout et la modification -->
 <div id="userModal" class="modal fade">
 	<div class="modal-dialog">
 		<form method="post" id="user_form" enctype="multipart/form-data">
@@ -59,7 +59,7 @@
 </div>
 
 <script type="text/javascript" language="javascript" >
-//Reset du modal pour l'ajout d'une chambre
+//Reset du modal pour l'ajout
 $(document).ready(function(){
 	$('#add_button').click(function(){
 		$('#user_form')[0].reset();
@@ -84,7 +84,7 @@ $(document).ready(function(){
 		},
 	});
 
-	// Insert d'une nouvelle chambre 
+	// Insert 
 	$(document).on('submit', '#user_form', function(event){
 		event.preventDefault();
 		var nom = $('#nom').val();
@@ -124,7 +124,7 @@ $(document).ready(function(){
 		}
 	});
 	
-	//Update d'une nouvelle chambre
+	//Update
 	$(document).on('click', '.update', function(){
 		var user_id = $(this).attr("id");
 		$.ajax({
@@ -139,7 +139,7 @@ $(document).ready(function(){
 				$('#date_naiss').val(data.date_naiss);
 				$('#dispo').val(data.dispo);
 				
-				$('.modal-title').text("Editer la chambre");
+				$('.modal-title').text("Editer le pingouin");
 				$('#user_id').val(user_id);
 				$('#user_uploaded_image').html(data.user_image);
 				$('#action').val("Edit");
@@ -148,10 +148,10 @@ $(document).ready(function(){
 		})
 	});
 	
-	//Delete d'une nouvelle chambre
+	//Delete
 	$(document).on('click', '.delete', function(){
 		var user_id = $(this).attr("id");
-		if(confirm("Etes-vous sûr de vouloir suppirmer ce pingouin ?"))
+		if(confirm("Etes-vous sûr de vouloir supprimer ce pingouin ?"))
 		{
 			$.ajax({
 				url:"delete.php",

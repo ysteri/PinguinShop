@@ -1,13 +1,13 @@
 <?php
 
-//Insertion ou update d'une nouvelle chambre selon la valeur de l'input operation
+//Insertion ou update selon la valeur de l'input operation
 
 
 
 include('pgConnect.php');
 include('function.php');
 if (isset($_POST["operation"])) {
-    //INSERTION CHAMBRE
+    //INSERTION
     if ($_POST["operation"] == "Add") {
         $image = '';
         if ($_FILES["user_image"]["name"] != '') {
@@ -30,7 +30,7 @@ if (isset($_POST["operation"])) {
         }
     }
 
-    //UPDATE CHAMBRE
+    //UPDATE
     if ($_POST["operation"] == "Edit") {
         $image = '';
         if ($_FILES["user_image"]["name"] != '') {
@@ -50,7 +50,7 @@ if (isset($_POST["operation"])) {
                     ':nom' => $_POST["nom"],
                     ':date_naiss' => $_POST["date_naiss"],
                     ':dispo' => $_POST["dispo"],
-                    ':id' => $_POST["user_id"]
+                    ':id' => $_POST["user_id"],
                 )
         );
         if (!empty($result)) {
