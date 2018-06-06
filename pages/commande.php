@@ -29,7 +29,7 @@ if (isset($_SESSION['id_commande'])) {
     ?>
     <div class="row">
         <div class="col-sm-4">
-            <img src="../admin/images/<?php print $liste[0]['IMAGE']; ?>">
+            <img width="100" src="admin/images/<?php print $liste[0]['IMAGE']; ?>">
 
         </div>
         <div class="col-sm-2">
