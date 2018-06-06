@@ -6,11 +6,11 @@
  */
 
 /**
- * Description of Accueil
+ * Description of Admin
  *
  * @author Thoma
  */
-class Accueil {
+class Admin {
 
     private $_attributs = array();
 
