@@ -115,10 +115,8 @@ if (isset($_SESSION['id_commande'])) {
                 </div>
             </div>
             <div class="row">
-
                 <div class="col-sm-4" id="coucou">
                     <input type="text" name="pingouin" id="pingouin" value="<?php print $liste[0]['NOM']; ?>" />
-
                 </div>
             </div>
 
@@ -127,4 +125,4 @@ if (isset($_SESSION['id_commande'])) {
 
     <?php
 }
-?>
+
