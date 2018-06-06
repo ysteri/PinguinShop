@@ -6,11 +6,6 @@
 
 <h2 id="titre">Bienvenue</h2>
 
-<!--   instanciation ici-->
-<?php
-$accueilBD = new AccueilBD($cnx);
-$description = $accueilBD->getTexteAccueil();
-?>
 <div class="row">
     <div class="col-md-7">
         <div class="carousel slide" id="gt_carousel" data-ride="carousel">  
@@ -42,4 +37,3 @@ $description = $accueilBD->getTexteAccueil();
                 Veuillez donc reserver au moins trois mois avant votre depart ! </span></p>
     </div>
 </div>
-
