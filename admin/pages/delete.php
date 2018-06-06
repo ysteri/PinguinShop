@@ -2,7 +2,7 @@
 
 <?php
 
-include('db.php');
+include('pgConnect.php');
 include("function.php");
 
 if (isset($_POST["user_id"])) {
@@ -11,16 +11,16 @@ if (isset($_POST["user_id"])) {
         unlink("images/" . $image);
     }
     $statement = $connection->prepare(
-            "DELETE FROM COCHONS WHERE ID = :id_cochons"
+            "DELETE FROM PINGOUINS WHERE ID = :id_pingouins"
     );
     $result = $statement->execute(
             array(
-                ':id_cochons' => $_POST["user_id"]
+                ':id_pingouins' => $_POST["user_id"]
             )
     );
 
     if (!empty($result)) {
-        echo 'Le cochon a bien été supprimée !';
+        echo 'Le pingouin a bien été supprimé !';
     }
 }
 ?>
