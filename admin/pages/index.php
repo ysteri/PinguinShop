@@ -17,7 +17,7 @@ session_start();
         <script src="lib/js/gt_function.js"></script>
         <script src="lib/js/gt_functionval.js"></script>
         <script src="lib/js/gt_functionAjax.js"></script>
-        <link rel="stylesheet" type="text/css" href="lib/css/style_diegro.css">
+        <link rel="stylesheet" type="text/css" href="lib/css/pinguin_style.css">
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -25,7 +25,7 @@ session_start();
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/lib/css/style.css" />
-        <link rel="stylesheet" href="/lib/css/style_diegro.css" />
+        <link rel="stylesheet" href="/lib/css/pinguin_style.css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="/lib/js/gt_functionUpload.js"></script>

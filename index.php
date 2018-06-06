@@ -19,7 +19,7 @@ session_start();
         <script src="admin/lib/js/gt_functionval.js"></script>
         <script src="admin/lib/js/gt_function.js"></script>
         <script src="admin/lib/js/gt_functionAjax.js"></script>
-        <link rel="stylesheet" type="text/css" href="admin/lib/css/style_diegro.css">
+        <link rel="stylesheet" type="text/css" href="admin/lib/css/pinguin_style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
